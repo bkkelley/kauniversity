@@ -326,31 +326,12 @@
 	<!-- END FOOTER | the footer element is also new to HTML5 -->
 	</div>
 
-	<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			embeddedservice_bootstrap.settings.prepopulatedPrechatFields = {
-    full_name: "Blake Kinkade",
-    customer_id: "1234",
-	role: "Admin",
-	username: "bkinkade"
-};
 
-			embeddedservice_bootstrap.init(
-				'00Dak00000BieQ2',
-				'Tebra_Bot_Github',
-				'https://kelleyaustin78-dev-ed.develop.my.site.com/ESWTebraBotGithub1725053470922',
-				{
-					scrt2URL: 'https://kelleyaustin78-dev-ed.develop.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
+<script src="https://hostawaysandbox.chilipiper.com/concierge-js/cjs/concierge.js" crossorigin="anonymous" type="text/javascript"></script>
+<script>
+  ChiliPiper.deploy("hostawaysandbox", "", {
+    "formType": "Web2Lead"
+})
 </script>
-<script type='text/javascript' src='https://kelleyaustin78-dev-ed.develop.my.site.com/ESWTebraBotGithub1725053470922/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
 </body>
 </html>
